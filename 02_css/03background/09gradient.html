@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>그라데이션 배경</title>
+  <style>
+    div {
+      width: 500px;
+      height: 500px;
+      margin: 10px;
+    }
+
+    .gr1 {
+      background: linear-gradient(135deg, #ff8a1e 0%, #ffe2a6 100%);
+    }
+
+    .gr2 {
+      background: radial-gradient(circle at 50% 50%, #ff8a1e 0%, #ffe2a6 100%);
+    }
+
+    .gr3 {
+      background: linear-gradient(135deg, #ff8a1e 0%, #ffe2a6 34%, #22d3ee 68%, #fef3c7 100%);
+    }
+
+    .gr4 {
+      background-image:
+        linear-gradient(135deg, rgba(255, 255, 255, .62), transparent 22%, rgba(255, 255, 255, .18) 56%, transparent 78%),
+        conic-gradient(from 135deg at 50% 50%, color-mix(in oklch, #ff8a1e 86%, transparent), color-mix(in oklch, #22d3ee 86%, transparent), color-mix(in oklch, #ffe2a6 86%, transparent), color-mix(in oklch, #fef3c7 86%, transparent), color-mix(in oklch, #ff8a1e 86%, transparent));
+    }
+
+    .gr5 {
+      background-image:
+        linear-gradient(135deg, rgba(255, 255, 255, .68) 0 30%, transparent 44% 54%, rgba(255, 255, 255, .24) 62%, transparent 82%),
+        radial-gradient(ellipse at 18% 24%, color-mix(in oklch, #ff8a1e 88%, transparent) 0 16%, transparent 42%),
+        radial-gradient(ellipse at 82% 18%, color-mix(in oklch, #22d3ee 88%, transparent) 0 18%, transparent 44%),
+        conic-gradient(from 135deg at 50% 54%, color-mix(in oklch, #ff8a1e 88%, transparent), color-mix(in oklch, #ffe2a6 88%, transparent), color-mix(in oklch, #22d3ee 88%, transparent), color-mix(in oklch, #fef3c7 88%, transparent), color-mix(in oklch, #ff8a1e 88%, transparent));
+    }
+
+    .gr6 {
+      background-color: #fef3c7;
+      background-image:
+        radial-gradient(ellipse at 12% 18%, color-mix(in oklch, #ff8a1e 90%, transparent) 0 18%, transparent 46%),
+        radial-gradient(ellipse at 86% 14%, color-mix(in oklch, #ffe2a6 90%, transparent) 0 16%, transparent 44%),
+        radial-gradient(ellipse at 66% 84%, color-mix(in oklch, #22d3ee 90%, transparent) 0 22%, transparent 52%),
+        radial-gradient(circle at 28% 76%, color-mix(in oklch, #fef3c7 64%, black) 0 18%, transparent 42%),
+        radial-gradient(circle, rgba(255, 255, 255, .18) 0 1px, transparent 1px),
+        conic-gradient(from 135deg at 52% 48%, color-mix(in oklch, #ff8a1e 90%, transparent), color-mix(in oklch, #ffe2a6 90%, transparent), color-mix(in oklch, #22d3ee 90%, transparent), color-mix(in oklch, #fef3c7 90%, transparent), color-mix(in oklch, #ff8a1e 90%, transparent));
+      background-blend-mode: screen, lighten, overlay, multiply, soft-light, normal;
+      filter: saturate(1.12);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="gr1"></div>
+  <div class="gr2"></div>
+  <div class="gr3"></div>
+  <div class="gr4"></div>
+  <div class="gr5"></div>
+  <div class="gr6"></div>
+</body>
+
+</html>

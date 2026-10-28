@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>표 예제 학습</title>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid #ccc;
+      border-collapse: collapse;
+    }
+
+    thead,
+    tfoot {
+      background-color: #eee;
+    }
+
+    th,
+    td {
+      padding: 10px 20px;
+      width: 150px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>상품 구성</h2>
+  <table>
+    <caption>선물용과 가정용 상품 구성</caption>
+    <thead>
+      <tr>
+        <th>용도</th>
+        <th>중량</th>
+        <th>개수</th>
+        <th>가격</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td rowspan="2">선물용</td>
+        <td>3kg</td>
+        <td>11~16과</td>
+        <td>35,000원</td>
+      </tr>
+
+      <tr>
+        <td>5kg</td>
+        <td>18~26과</td>
+        <td>52,000원</td>
+      </tr>
+
+      <tr>
+        <td rowspan="2">가정용</td>
+        <td>3kg</td>
+        <td>11~16과</td>
+        <td>30,000원</td>
+      </tr>
+
+      <tr>
+        <td>5kg</td>
+        <td>18~26과</td>
+        <td>47,000원</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+
+    </tfoot>
+  </table>
+  <br>
+  <table>
+    <caption>판매스킬을 늘리는 방법</caption>
+
+    <thead>
+
+    </thead>
+
+    <tbody>
+      <tr>
+        <th>교육 테마</th>
+        <th>교육 세부내용</th>
+      </tr>
+
+      <tr>
+        <th rowspan="2">고객친화 세일즈</th>
+        <td>인간의 특질과 친화력</td>
+      </tr>
+
+      <tr>
+        <td>행동, 분위기, 단어 맞추기</td>
+      </tr>
+
+      <tr>
+        <th rowspan="2">고객행동 스타일</th>
+        <td>나만의 고객 유형별 응대법 개발</td>
+      </tr>
+
+      <tr>
+        <td>고객 유형별 맞춤 가이드북 제작</td>
+      </tr>
+
+      <tr>
+        <th rowspan="3">스토리텔링</th>
+        <td>고객을 이야기로 유혹하는 7가지 방법</td>
+      </tr>
+
+      <tr>
+        <td>이야기의 마력과 무의식적인 선택</td>
+      </tr>
+
+      <tr>
+        <td>이야기로 풀어가는 세일즈</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+
+    </tfoot>
+
+  </table>
+</body>
+
+</html>
