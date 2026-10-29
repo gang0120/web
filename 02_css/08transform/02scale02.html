@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>scale</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      width: 640px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    ul li {
+      width: 200px;
+      height: 150px;
+      overflow: hidden;
+    }
+
+    ul li a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    ul li a img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: .6s;
+    }
+
+    ul li:hover a img {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li><a href="#"><img src="https://image.starnewskorea.com/cdn-cgi/image/f=auto,w=640/21/2026/06/2026061007351539046_1.jpg" alt="지민1"></a></li>
+    <li><a href="#"><img src="https://i.namu.wiki/i/n4fC5eKpMt_LAHitHc_-2oLV0_I9bZfJkNJg9UfiiYOi7Al6rZyaCHXhl4rhSSDSMaLKOeSRNckqHHoArrsshg.webp" alt="지민2"></a></li>
+    <li><a href="#"><img src="https://image.starnewskorea.com/21/2026/04/2026040507363466893_1.jpg" alt="지민3"></a></li>
+  </ul>
+</body>
+
+</html>
