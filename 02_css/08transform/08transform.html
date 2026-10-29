@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>카드뒤집기</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .con {
+      width: 300px;
+      height: 300px;
+      background: #ccc;
+      position: relative;
+      margin: 400px auto;
+    }
+
+    .con .card {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: .6s;
+      transform-origin: top;
+      transform-style: preserve-3d;
+      border: 1px solid #ccc;
+    }
+
+    .con:hover .card {
+      transform: rotateX(180deg);
+    }
+
+    .face {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .face img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .back {
+      backface-visibility: hidden;
+      transform: rotateX(180deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="con">
+    <div class="card">
+      <div class="face front"><img
+          src="https://www.elle.co.kr/resources/online/online_image/2025/12/26/a823d31d-f1a6-4d66-98b7-a8ad4b2d6f28.jpg"
+          alt="정국앞면"></div>
+      <div class="face back"><img
+          src="https://i.namu.wiki/i/c9b4JEyq1_8I8cCZgYQOiPcyON3a1Imnl5jjWPKK10ULubFDzV475sxTLbWMS2OcApBmC5gDUaATjEm4hKtuVA.webp"
+          alt="정국뒷면"></div>
+    </div><!-- //.card -->
+  </div><!-- //.con -->
+</body>
+
+</html>
