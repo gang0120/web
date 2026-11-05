@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>261105-복습</title>
+</head>
+<body>
+  <script>
+    // name이라는 변수에 prompt로 이름 입력받기
+    let name = prompt('이름을 입력하세요');
+    // score라는 변수에 prompt로 점수 입력받기
+    let score = prompt('점수를 입력하세요');
+    // 삼항 조건 연산자 사용
+    // score가 60점 이상이면 합격
+    // 60점 미만이면 불합격
+    // (score>60) ? '합격' : '불합격';
+    // comment라는 변수에
+    // "OOO님은 합격입니다"
+    // 또는 "OOO님은 불합격입니다"
+    // 문자 결합 연산자를 사용하여 저장
+    let comment = (score>60) ? `${name}님은 합격입니다` : `${name}님은 불합격입니다`
+    document.write(`<h2>${comment}</h2>`)
+    // comment가 h2 태그로 뜨게 출력
+  </script>
+</body>
+</html>
