@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="result"></div>
+  <script>
+    /*
+      국어, 영어, 수학 점수를 prompt로 받아와서 - 변수 3개 제작
+      토탈 - 더하는 변수
+      평균 - 토탈을 3으로 나누는 변수
+      학점 - if/else if문 안에서 작업 > 변수 선언만
+
+      평균이 90점 이상이면 A(학점에 집어넣기)
+      80점 이상이면 B(학점에 집어넣기)
+      70점 이상이면 C(학점에 집어넣기)
+      60점 이상이면 D(학점에 집어넣기)
+      그외는 F(학점에 집어넣기)
+      "당신의 학점은 (result)입니다"
+  */
+    let kor = Number(prompt('당신의 국어 점수를 입력하세요'));
+    let eng = Number(prompt('당신의 영어 점수를 입력하세요'));
+    let mat = Number(prompt('당신의 수학 점수를 입력하세요'));
+    let total = Number(kor) + Number(eng) + Number(mat);
+    let avg = total / 3;
+    let score;
+    
+    if (avg >= 90) {
+      score = 'A';
+    } else if (avg >= 80) {
+      score = 'B';
+    } else if (avg >= 70) {
+      score = 'C';
+    } else if (avg >= 60) {
+      score = 'D';
+    } else {
+      score = 'F';
+    }
+    document.getElementById('result').innerHTML = `당신의 학점은 ${score} 입니다`
+  </script>
+</body>
+
+</html>
