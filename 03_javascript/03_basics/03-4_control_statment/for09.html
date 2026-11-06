@@ -9,12 +9,16 @@
 
 <body>
   <!-- <select>
-    <option value="2026">2026년도</option> 옵션 반복됨 for문 1900년도 까지
+    <option value="2026">2026년도</option> 옵션 반복됨 for문 1970년도 까지
     <option value="2025">2025년도</option>
     <option value="2024">2024년도</option>
   </select> -->
   <script>
-
+    document.write(`<select>`)
+    for (let x = 2026; x >= 1900; x--) {
+      document.write(`<option value="${x}">${x}년도<br></option>`);
+    }
+    document.write(`</select>`)
   </script>
 </body>
 
